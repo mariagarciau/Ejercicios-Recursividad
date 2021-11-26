@@ -12,8 +12,8 @@ encima de un número en el triángulo. A continuación se muestra un ejemplo del
 Escriba un programa que imprima el triángulo de Pascal. Su programa debe aceptar un parámetro
 que indique cuántas filas del triángulo se imprimirán.
 """
-def pascal(columna,fila):
+def trianguloPascal(columna,fila):
     if(columna == 0) or (columna == fila):
         return 1
     else:
-        return pascal(columna-1,fila-1) + pascal(columna,fila-1)
+        return trianguloPascal(columna-1,fila-1) + trianguloPascal(columna,fila-1)
